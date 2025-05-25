@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Climapp</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Buscador -->
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Ej: Asunción o Asuncion,PY">
+      <button id="searchButton">Buscar</button>
+    </div>
+
+    <!-- Contenedor principal del clima (NUEVO) -->
+    <div id="weatherContainer">
+      <!-- Tarjeta clima actual -->
+      <div class="weather-card">
+        <h2 id="cityHeader">Ciudad por defecto</h2>
+        <div class="weather-main">
+          <img id="documentIconImg" alt="Icono del clima">
+          <div class="temp-desc">
+            <div id="temperature">--°C</div>
+            <div id="weatherDescriptionHeader">Descripción</div>
+          </div>
+        </div>
+        <div class="bonus-message" id="weatherBonus" style="display: none;"></div>
+        
+        <div class="current-details">
+          <div><span class="emoji">💨</span> Viento: <span id="wind">--</span></div>
+          <div><span class="emoji">💧</span> Humedad: <span id="humidity">--</span></div>
+          <div><span class="emoji">🌡️</span> Presión: <span id="pressure">--</span></div>
+          <div><span class="emoji">🌅</span> Amanecer: <span id="sunrise">--:--</span></div>
+          <div><span class="emoji">🌇</span> Atardecer: <span id="sunset">--:--</span></div>
+          <div><span class="emoji">👀</span> Visibilidad: <span id="visibility">--</span></div>
+        </div>
+      </div>
+
+      <!-- Pronóstico próximas horas -->
+      <div class="forecast-card">
+        <h3>Próximas horas</h3>
+        <div id="forecastHours" class="forecast-hours">
+          <!-- Se rellena dinámicamente -->
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
