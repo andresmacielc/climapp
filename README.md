@@ -51,7 +51,7 @@ Aplicación web de consulta del clima que utiliza la API de OpenWeather para mos
 * Activa o desactiva notificaciones en la interfaz.
 
 ## 📁 Estructura de Proyecto
-
+```
 climapp/
 ├── css/
 ├── js/
@@ -59,7 +59,7 @@ climapp/
 │   └── notifications.js
 ├── images/
 └── index.html
-
+```
 
 ## 🤝 Contribuciones
 
